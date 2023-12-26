@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Get_Players",
+    "name": "Get_Team_Names",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/p/players"
+        "url": "web:4000/t/get-team-names"
       },
       "invalids": [],
       "messages": [],
@@ -46,9 +46,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-25T08:27:06Z"
+    "createdAt": "2023-12-26T18:26:53Z"
   },
-  "id": "Draft_Get_Players",
+  "id": "Draft_Get_Team_Names",
   "deleted": false,
-  "gitSyncId": "658820ed924db5035388bb07_65882d2a924db5035388bb12"
+  "gitSyncId": "65893cda7f03f479e4cf53b1_658b1aedec905433a89d218a"
 }
