@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Draft",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "socketResponse",
+        "value": "null"
+      },
+      {
+        "name": "WEBSOCKET_ENDPOINT",
+        "value": "\"wss://stream-internal.wazirx.com/stream\""
+      },
+      {
+        "name": "socket",
+        "value": "undefined"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Draft_JSObject1",
+  "deleted": false,
+  "gitSyncId": "65893cda7f03f479e4cf53b1_658c45c15d6ced627d4c50f6"
+}

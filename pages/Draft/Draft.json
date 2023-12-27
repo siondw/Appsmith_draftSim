@@ -55,6 +55,19 @@
               ],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "Draft_JSObject1.onPageLoad",
+              "name": "JSObject1.onPageLoad",
+              "collectionId": "Draft_JSObject1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  JSObject1.socket = new WebSocket(JSObject1.WEBSOCKET_ENDPOINT);\n  JSObject1.socket.onopen = JSObject1.socketOnOpen;\n  JSObject1.socket.onclose = JSObject1.socketOnClose;\n  JSObject1.socket.onmessage = JSObject1.socketOnMessage;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
         "layoutOnLoadActionErrors": [],
