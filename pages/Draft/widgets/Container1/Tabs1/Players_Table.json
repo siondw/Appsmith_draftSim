@@ -240,7 +240,7 @@
             "enableSort": true,
             "isSaveVisible": true,
             "id": "customColumn1",
-            "isDisabled": false,
+            "isDisabled": true,
             "allowSameOptionsInNewRow": true,
             "validation": {},
             "isCellVisible": true,

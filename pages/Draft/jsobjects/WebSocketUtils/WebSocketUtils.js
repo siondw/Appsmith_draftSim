@@ -11,6 +11,8 @@ export default {
     console.log('onopen', data);
     // You might want to call sendEvent here to subscribe or send an initial message
   },
+	
+	
   // This function will be executed when a message is received through the WebSocket connection
   socketOnMessage: function(message) { // Changed to a function expression
     let response = JSON.parse(message?.data);
@@ -29,21 +31,28 @@ export default {
         let newPlayer = response.player;
 				let nominater = response.nominater;
         this.user_max_bid = response.user_max;
+				storeValue('nominator', response.nominator);
 
         // Reset the UI for the new round
         CurrentBid_Text.setText("Current Bid: $0");
         HighestBidder_Text.setText("Highest Bidder: " + nominater);
         NewPlayer_Text.setText("Player on Auction: " + newPlayer); 
+    } else if (response.event === 'prompt_nomination') {
+        // Logic to show the modal or dropdown for player selection
+        showAlert('Nominate a Player', 'info');
+				// On Page 2
+				let isNominationEnabled = appsmith.store.isNominationEnabled;
 
-        
-    }
+		}
     console.log("socketOnMessage", response);
     this.socketResponse = response; // Removed the ?.data since you're already inside the response
   },
   // This function will be executed when the WebSocket connection is closed
   socketOnClose: function(data) { // Changed to a function expression
     console.log('onclose', data);
-  },
+	},
+		
+		
   // This asynchronous function is intended to be called when the page loads.
   // It initializes the WebSocket connection using the provided WEBSOCKET_ENDPOINT
   // and sets up the event handlers for its onopen, onclose, and onmessage
@@ -84,6 +93,12 @@ export default {
     // Optional: Provide feedback to the user or clear the input field
     // ...
 	},
+	
+		sendNomination: function(selectedPlayer) {
+   	 this.sendEvent("player_nominated", { player: selectedPlayer });
+   	 storeValue('isNominationEnabled', false); // Disable nomination after selection
+	},
+
 	
 	// Function to send events through the WebSocket connection
     sendEvent: function(eventType, data) {

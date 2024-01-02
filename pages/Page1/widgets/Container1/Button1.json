@@ -3,7 +3,7 @@
     "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
     "mobileBottomRow": 41,
     "widgetName": "Button1",
-    "onClick": "{{StartDraft.run().then(() => {\n  navigateTo('Draft', {}, 'SAME_WINDOW');\n});}}",
+    "onClick": "{{StartDraft.run().then(() => {\n  navigateTo('Draft', {}, 'SAME_WINDOW');\n  Store_Nomination_State.myFun1();\n});}}",
     "buttonColor": "#22c55e",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
