@@ -7,8 +7,8 @@ export default {
   // This property will hold the WebSocket object once it is instantiated
   socket: undefined,
   // This function will be executed when the WebSocket connection is successfully established
-  socketOnOpen: function(data) { // Changed to a function expression
-    console.log('onopen', data);
+  socketOnOpen: (data) => {
+		console.log('onopen', data);
     // You might want to call sendEvent here to subscribe or send an initial message
   },
 	
@@ -41,9 +41,11 @@ export default {
         // Logic to show the modal or dropdown for player selection
         showAlert('Nominate a Player', 'info');
 				// On Page 2
-				let isNominationEnabled = appsmith.store.isNominationEnabled;
+				storeValue('isNominationEnabled', true); // Disable nomination after selection
 
-		}
+		} else if(response.event === 'error') {
+        showAlert(response.message, 'error');
+    } 
     console.log("socketOnMessage", response);
     this.socketResponse = response; // Removed the ?.data since you're already inside the response
   },
@@ -58,9 +60,9 @@ export default {
   // and sets up the event handlers for its onopen, onclose, and onmessage
   onPageLoad: async function() { // Changed to a function expression
     this.socket = new WebSocket(this.WEBSOCKET_ENDPOINT);
-    this.socket.onopen = this.socketOnOpen.bind(this); // Binding this to the function
-    this.socket.onclose = this.socketOnClose.bind(this); // Binding this to the function
-    this.socket.onmessage = this.socketOnMessage.bind(this); // Binding this to the function
+		this.socket.onopen = this.socketOnOpen;
+		this.socket.onclose = this.socketOnClose;	
+		this.socket.onmessage = this.socketOnMessage;
   },
 	
 	sendUserBid: function() {
@@ -98,6 +100,15 @@ export default {
    	 this.sendEvent("player_nominated", { player: selectedPlayer });
    	 storeValue('isNominationEnabled', false); // Disable nomination after selection
 	},
+	
+	startRound: function() {
+    this.sendEvent("start_round");
+	},
+
+	passBid: function() {
+    this.sendEvent("pass_bid");
+	},
+
 
 	
 	// Function to send events through the WebSocket connection

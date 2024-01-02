@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "onPageLoad",
-    "fullyQualifiedName": "WebSocketUtils.onPageLoad",
+    "name": "startRound",
+    "fullyQualifiedName": "WebSocketUtils.startRound",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -22,7 +22,7 @@
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -31,13 +31,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2024-01-02T12:31:12Z"
+    "userPermissions": []
   },
-  "id": "Draft_WebSocketUtils.onPageLoad",
+  "id": "Draft_WebSocketUtils.startRound",
   "deleted": false,
-  "gitSyncId": "658820ed924db5035388bb07_65940210e52d0f73fbe02a21"
+  "gitSyncId": "658820ed924db5035388bb07_6594565be52d0f73fbe02a3b"
 }

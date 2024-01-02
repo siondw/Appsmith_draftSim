@@ -77,7 +77,10 @@
         "positional_rank",
         "projected_points"
     ],
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [
+        {"key": "primaryColumns.customColumn1.isDisabled"},
+        {"key": "primaryColumns.customColumn1.onClick"}
+    ],
     "displayName": "Table",
     "bottomRow": 104,
     "columnWidthMap": {
@@ -92,7 +95,7 @@
     "hideCard": false,
     "mobileRightColumn": 43,
     "parentColumnSpace": 21,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "primaryColumns.customColumn1.onClick"}],
     "borderWidth": "1",
     "primaryColumns": {
         "positional_rank": {
@@ -233,6 +236,7 @@
         },
         "customColumn1": {
             "computedValue": "",
+            "onClick": "{{\nWebSocketUtils.sendNomination(Players_Table.triggeredRow.name);}}",
             "buttonColor": "#22c55e",
             "isEditable": false,
             "notation": "standard",
@@ -240,7 +244,7 @@
             "enableSort": true,
             "isSaveVisible": true,
             "id": "customColumn1",
-            "isDisabled": true,
+            "isDisabled": "",
             "allowSameOptionsInNewRow": true,
             "validation": {},
             "isCellVisible": true,

@@ -8,7 +8,7 @@
     "maxNum": "200",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 52,
+    "leftColumn": 42,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -54,7 +54,7 @@
     "key": "6vdstxkdkw",
     "labelTextSize": "3rem",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 52,
     "widgetId": "ngzd4hft9z",
     "errorMessage": "Not a valid value!",
     "minWidth": 450,

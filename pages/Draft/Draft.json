@@ -46,6 +46,19 @@
           ],
           [
             {
+              "id": "Draft_WebSocketUtils.onPageLoad",
+              "name": "WebSocketUtils.onPageLoad",
+              "collectionId": "Draft_WebSocketUtils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  WebSocketUtils.socket = new WebSocket(WebSocketUtils.WEBSOCKET_ENDPOINT);\n  WebSocketUtils.socket.onopen = WebSocketUtils.socketOnOpen;\n  WebSocketUtils.socket.onclose = WebSocketUtils.socketOnClose;\n  WebSocketUtils.socket.onmessage = WebSocketUtils.socketOnMessage;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Draft_Get_Team_Roster",
               "name": "Get_Team_Roster",
               "confirmBeforeExecute": false,

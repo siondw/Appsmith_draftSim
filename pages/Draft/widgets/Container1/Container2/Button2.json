@@ -3,7 +3,8 @@
     "boxShadow": "none",
     "mobileBottomRow": 19,
     "widgetName": "Button2",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "onClick": "{{WebSocketUtils.startRound();}}",
+    "buttonColor": "#ffffff",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [
@@ -18,13 +19,10 @@
     "mobileRightColumn": 62,
     "animateLoading": true,
     "parentColumnSpace": 20.6875,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 55,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "Start Round",
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "text": "Start New Round",
     "isDisabled": false,
     "key": "1vnhbrugw0",
     "isDeprecated": false,
