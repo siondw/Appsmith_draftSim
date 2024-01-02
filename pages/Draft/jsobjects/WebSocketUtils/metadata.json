@@ -1,0 +1,32 @@
+{
+  "unpublishedCollection": {
+    "name": "WebSocketUtils",
+    "pageId": "Draft",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "socketResponse",
+        "value": "null"
+      },
+      {
+        "name": "user_max_bid",
+        "value": "185"
+      },
+      {
+        "name": "WEBSOCKET_ENDPOINT",
+        "value": "\"ws://web:8001\""
+      },
+      {
+        "name": "socket",
+        "value": "undefined"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Draft_WebSocketUtils",
+  "deleted": false,
+  "gitSyncId": "658820ed924db5035388bb07_65940205e52d0f73fbe02a1e"
+}

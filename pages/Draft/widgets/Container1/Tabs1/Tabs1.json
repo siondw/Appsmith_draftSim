@@ -1,13 +1,13 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
     "mobileBottomRow": 25,
     "widgetName": "Tabs1",
     "borderColor": "#E0DEDE",
     "isCanvas": true,
     "displayName": "Tabs",
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
-    "topRow": 69,
-    "bottomRow": 88,
+    "topRow": 32,
+    "bottomRow": 143,
     "parentRowSpace": 10,
     "type": "TABS_WIDGET",
     "hideCard": false,
@@ -15,11 +15,11 @@
     "mobileRightColumn": 7,
     "animateLoading": true,
     "parentColumnSpace": 21,
-    "leftColumn": 0,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 10,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"}
+        {"key": "borderRadius"}
     ],
     "children": [
         {
@@ -28,7 +28,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas2",
             "displayName": "Canvas",
-            "bottomRow": 150,
+            "bottomRow": 1060,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -38,6 +38,7 @@
             "minHeight": 150,
             "mobileRightColumn": 147,
             "parentColumnSpace": 1,
+            "dynamicTriggerPathList": [],
             "leftColumn": 0,
             "dynamicBindingPathList": [
                 {"key": "borderRadius"},
@@ -46,7 +47,7 @@
             "isDisabled": false,
             "key": "74wwj2gbmm",
             "isDeprecated": false,
-            "tabName": "Tab 1",
+            "tabName": "View Teams",
             "rightColumn": 147,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -70,8 +71,9 @@
             "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
             "mobileBottomRow": 150,
             "widgetName": "Canvas3",
+            "borderColor": "#e0dede",
             "displayName": "Canvas",
-            "bottomRow": 150,
+            "bottomRow": 1060,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -81,15 +83,17 @@
             "minHeight": 150,
             "mobileRightColumn": 147,
             "parentColumnSpace": 1,
+            "dynamicTriggerPathList": [],
             "leftColumn": 0,
             "dynamicBindingPathList": [
                 {"key": "borderRadius"},
                 {"key": "boxShadow"}
             ],
+            "borderWidth": "8",
             "isDisabled": false,
             "key": "74wwj2gbmm",
             "isDeprecated": false,
-            "tabName": "Tab 2",
+            "tabName": "Players",
             "rightColumn": 147,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -109,16 +113,16 @@
             "flexLayers": []
         }
     ],
-    "borderWidth": 1,
+    "borderWidth": "5",
     "flexVerticalAlignment": "stretch",
     "key": "y8rnk1mimg",
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#ffffff",
     "isDeprecated": false,
-    "rightColumn": 6,
+    "rightColumn": 64,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "rvi70w8z7e",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "defaultTab": "Tab 1",
+    "defaultTab": "Players",
     "shouldShowTabs": true,
     "minWidth": 450,
     "tabsObj": {
@@ -126,7 +130,7 @@
             "widgetId": "jvsqiep3ed",
             "positioning": "vertical",
             "index": 0,
-            "label": "Tab 1",
+            "label": "View Teams",
             "id": "tab1",
             "isVisible": true
         },
@@ -134,7 +138,7 @@
             "widgetId": "8ggx4xn05l",
             "positioning": "vertical",
             "index": 1,
-            "label": "Tab 2",
+            "label": "Players",
             "id": "tab2",
             "isVisible": true
         }
@@ -147,10 +151,10 @@
     "isLoading": false,
     "mobileTopRow": 10,
     "responsiveBehavior": "fill",
-    "originalTopRow": 69,
+    "originalTopRow": 32,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 88,
+    "originalBottomRow": 143,
     "minDynamicHeight": 15
 }
